@@ -1,78 +1,102 @@
-<!DOCUMENT html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
 <style>
+   ul {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #333;
+
+}
+
+li {
+
+  float: left;
+
+}
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+
+  background-color: #FF69B4;
+}
+   
+   active{
+      background-color: #FF69B4;
+    }
+   herder{
+      text-align:center;
+      background-color:#FFB6C1;
+}
+   
+ body {
+  background-image:url("warteg.jpg");
+  }
+  
 * {
   box-sizing: border-box;
 }
 
 body {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Monaco, courier, monospace;
 }
 
+/* Style the header */
 header {
-  font-family: "copperplate",fantasy;
-  background-color: #FF4500;
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-  padding: 25px;
+  background-color: #FF0000;
+  padding: 15px;
   text-align: center;
-  font-size: 30px;
-  color: white;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  font-size: 40px;
+  color: yellow;
+  background-image: url('warteg.jpg.jpg');
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #000000;
-}
-
-}
 
 article {
   float: left;
-  padding: 30px;
-  width: 100%;
- background-color: #FFD700;
-  height: 380px;
-text-align: center;  
+  padding: 50px;
+  width: 1350px;
+  background-color: #FFDEAD;
+  height: 300px; /* only for demonstration, should be removed */
 }
 
+/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* Style the footer */
 footer {
-  background-color: #FF4500;
+  background-color: #FF0000;
   padding: 10px;
   text-align: center;
-  
+  color: white;
 }
 
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -82,56 +106,45 @@ footer {
 
 </style>
 </head>
-   <body>
-   <header>
-  <h2>Form Login : </h2>
+<body>
+  <header>
+  <h2>TOKO BUNGA DENIS</h2>
 </header>
-	   <ul>
-	<li><a href="#home">Home</a></li>
+   
+   <ul>
+<li><a href="#home">Home</a></li>
 
  <li><a href="menu2.html">Menu</a></li> 
 
  
  <li><a href="form daftar2.html">Daftar</a></li>
  
- <li><a href="table.html">Presensi</a></li>
-	   </ul>
-<article>
- <section>
-<table border="1">
-  <tr bgcolor="yellow">
-     <th rowspan="2">NO </th>
-	 <th  rowspan="2" width="200">NAMA </th>
-	 <th rowspan="2" width="50">JK </th>
-	 <th rowspan="2" width="100">KELAS</th>
-	 <th colspan="4" >SEPTEMBER</th>
- <tr bgcolor="yellow">
-	<th>1</th>
-	<th>2</th>
-	<th>3</th>
-	<th>4</th>
- </tr>
- </tr>
- 
-  <tr>
- 	<td>1</td>
-	<td>aaa</td>
-	<td>LK</td>
-	<td>XII RPL 1</td>
-    <td>H</td>
-	<td>H</td>
-	<td>H</td>
-	<td>H</td>
-  </tr>
+ <li><a href="presensi.html">Presensi</a></li>
 
- </table>
-	   
+</ul> 
+ </div>
+  
+ 
+<section>
+
+ 
+  <article>
+    <h1>Bunga Mawar</h1>
+    <p>Bunga mawar adalah jenis tanaman semak yang berasal dari Genus rosa sekaligus menjadi nama dari bunga yang dihasilkan oleh tumbuhan ini. Mawar umumnya merupakan tanaman semak yang berduri atau tanaman memanjat yang tingginya bisa mencapai 2 sampai 5 meter.</p>
+    <img src="mawar.jpg" alt="mawar" width="75" height="100">
+    <img src="mawar2.jpg" alt="mawar2" width="75" height="100">
+    <img src="mawar3.jpg" alt="mawar3" width="75" height="100">
+    <img src="mawar4.jpg" alt="mawar4" width="75" height="100">
+    <img src="mawar5.jpg" alt="mawar5" width="75" height="100">
+    <img src="mawar6.jpg" alt="mawar6" width="75" height="100">
+  
+   
+  </article>
+   
 </section>
-</article>
-	   
 <footer>
- <p>Create By : DenisAmelia</p>
+  <p>Create By : DenisAmelia</p>
 </footer>
-	   
+
 </body>
 </html>
