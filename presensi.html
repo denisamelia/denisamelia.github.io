@@ -1,102 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCUMENT html>
+<html>
 <head>
-
 <style>
-   ul {
-
-  list-style-type: none;
-
-  margin: 0;
-
-  padding: 0;
-
-  overflow: hidden;
-
-  background-color: #333;
-
-}
-
-li {
-
-  float: left;
-
-}
-
-li a {
-
-  display: block;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 14px 16px;
-
-  text-decoration: none;
-
-}
-
-li a:hover:not(.active) {
-
-  background-color: #FF69B4;
-}
-   
-   active{
-      background-color: #FF69B4;
-    }
-   herder{
-      text-align:center;
-      background-color:#FFB6C1;
-}
-   
- body {
-  background-image:url("warteg.jpg");
-  }
-  
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Monaco, courier, monospace;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
 header {
-  background-color: #FF0000;
-  padding: 15px;
+  font-family: "copperplate",fantasy;
+  background-color: #FF4500;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 25px;
   text-align: center;
-  font-size: 40px;
-  color: yellow;
-  background-image: url('warteg.jpg.jpg');
+  font-size: 30px;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #000000;
+}
+
+}
 
 article {
   float: left;
-  padding: 50px;
-  width: 1350px;
-  background-color: #FFDEAD;
-  height: 300px; /* only for demonstration, should be removed */
+  padding: 30px;
+  width: 100%;
+ background-color: #FFD700;
+  height: 380px;
+text-align: center;  
 }
 
-/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
 footer {
-  background-color: #FF0000;
+  background-color: #FF4500;
   padding: 10px;
   text-align: center;
-  color: white;
+  
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -106,16 +82,23 @@ footer {
 
 </style>
 </head>
-<body>
-  <header>
-  <h2>TOKO BUNGA DENIS</h2>
+   <body>
+   <header>
+  <h2>Form Login : </h2>
 </header>
-   <section>
+	   <ul>
+	<li><a href="#home">Home</a></li>
+
+ <li><a href="menu2.html">Menu</a></li> 
 
  
-  <article>
-    <h2> Tabel Data Kelas </h2>
- <table border="1">
+ <li><a href="form daftar2.html">Daftar</a></li>
+ 
+ <li><a href="table.html">Presensi</a></li>
+	   </ul>
+<article>
+ <section>
+<table border="1">
   <tr bgcolor="yellow">
      <th rowspan="2">NO </th>
 	 <th  rowspan="2" width="200">NAMA </th>
@@ -142,14 +125,13 @@ footer {
   </tr>
 
  </table>
-
-   
-  </article>
-   
+	   
 </section>
+</article>
+	   
 <footer>
-  <p>Create By : DenisAmelia</p>
+ <p>Create By : DenisAmelia</p>
 </footer>
-
+	   
 </body>
 </html>
